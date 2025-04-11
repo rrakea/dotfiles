@@ -41,6 +41,7 @@ alias sys='btop'
 alias blame='blame -w -C -C -C'
 alias matrix='cmatrix -absr'
 alias md='mkdir -p'
+alias logout='hyprctl dispatch exit'
 
 echo
 echo
