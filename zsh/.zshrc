@@ -19,6 +19,8 @@ bindkey -e
 
 export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
+fpath=(/usr/share/zsh/site-functions $fpath)
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(oh-my-posh init zsh --config ~/.config/zsh/catppuccin_mocha.omp.json)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init --cmd cd zsh)"
