@@ -1,0 +1,24 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[init]
+	defaultBranch = main
+[user]
+	email = konradburgi1@gmail.com
+	name = rrakea
+[alias]
+	graph = log --oneline --graph --decorate
+[column]
+	ui = auto
+[branch]
+	sort = --committerdate
+[pull]
+	rebase = false
+[core]
+	editor = code
+	autocrlf = input
+[rerere]
+	enabled = true

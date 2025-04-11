@@ -1,0 +1,48 @@
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '' '' 'l:|=* r:|=*'
+zstyle :compinstall filename '/home/rrakea/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.config/zsh/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt nomatch
+unsetopt autocd beep extendedglob notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+export PATH="/home/rrakea/code/scripts:$PATH"
+export PATH="/home/rrakea/.local/bin:$PATH"
+eval "$(oh-my-posh init zsh --config ~/.config/zsh/catppuccin_mocha.omp.json)"
+eval "$(thefuck --alias)"
+eval "$(zoxide init --cmd cd zsh)"
+
+ 
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias c='clear'
+alias l='ls -a'
+alias pin='sudo pacman -S'
+alias prm='sudo pacman -R'
+alias yin='yay -S'
+alias yrm='yay -R'
+alias fin='flatpak install'
+alias frm='flatpak uninstall'
+alias conf='code ~/.config/hypr'
+alias sp='spf .'
+alias shutdown='shutdown 0'
+alias sys='btop'
+alias blame='blame -w -C -C -C'
+alias matrix='cmatrix -absr'
+alias md='mkdir -p'
+
+echo
+echo
+fastfetch
+echo
