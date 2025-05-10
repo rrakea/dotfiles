@@ -28,7 +28,12 @@ eval "$(zoxide init --cmd cd zsh)"
 source <(fzf --zsh)
 source ~/clones/fzf-tab/fzf-tab.plugin.zsh
 
- 
+# fzf theme:
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+    --highlight-line
+    --border=none
+    --info=inline-right
+'
 alias l='eza --icons=always'
 alias ls='eza --icons=always'
 alias ll='eza -l --icons=always -M --no-user --no-time --total-size --icons=always'
@@ -59,9 +64,6 @@ alias e='exit'
 alias ho='cdi; helix .'
 alias vo='cdi; code .'
 alias rga='rg --hidden --no-ignore'
+alias ff= 'fastfetch'
 
 
-echo
-echo
-fastfetch
-echo
