@@ -11,6 +11,8 @@
 	name = rrakea
 [alias]
 	graph = log --oneline --graph --decorate
+	change = blame -w -C -C -C
+	c = commit -a
 [column]
 	ui = auto
 [branch]
@@ -18,7 +20,7 @@
 [pull]
 	rebase = false
 [core]
-	editor = code
+	editor = helix
 	autocrlf = input
 [rerere]
 	enabled = true
