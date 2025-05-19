@@ -34,3 +34,4 @@ C-k = "jump_view_up"
 
 C-n = "vsplit_new"
 C-q = "wclose"
+

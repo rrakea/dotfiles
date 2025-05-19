@@ -17,7 +17,7 @@ unsetopt autocd beep extendedglob notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-export PATH="/home/rrakea/code/scripts:$PATH"
+export PATH="/home/rrakea/config/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 fpath=(/usr/share/zsh/site-functions $fpath)
@@ -34,8 +34,8 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --border=none
     --info=inline-right
 '
-alias l='eza --icons=always'
-alias ls='eza --icons=always'
+alias l='pwd; eza --icons=always'
+alias ls='pwd; eza --icons=always'
 alias ll='eza -l --icons=always -M --no-user --no-time --total-size --icons=always'
 alias la='eza -a --icons=always'
 alias lt='eza -T --icons=always'
@@ -49,18 +49,19 @@ alias fin='flatpak install'
 alias frm='flatpak uninstall'
 alias bin='brew install'
 alias brm='brew uninstall'
-alias dot='helix ~/.dotfiles'
+alias conf='helix ~/config'
 alias s='spf .'
 alias shutdown='shutdown 0'
 alias sys='btop'
 alias blame='blame -w -C -C -C'
 alias matrix='cmatrix -absr'
 alias md='mkdir -p'
+alias mf='touch'
 alias logout='hyprctl dispatch exit'
 alias vs='code .; exit'
 alias h='helix .'
 alias e='exit'
 alias rga='rg --hidden --no-ignore'
-alias ff= 'fastfetch'
+alias ff='fastfetch'
 
 
