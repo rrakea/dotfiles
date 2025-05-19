@@ -13,6 +13,7 @@
 	graph = log --oneline --graph --decorate
 	change = blame -w -C -C -C
 	c = commit -a
+	p = push origin main
 [column]
 	ui = auto
 [branch]
