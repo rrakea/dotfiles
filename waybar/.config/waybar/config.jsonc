@@ -1,7 +1,11 @@
 {
 
   "layer": "top",
+<<<<<<< HEAD
   "output": ["HDMI-A-1"],
+=======
+  "output": ["eDP-1"],
+>>>>>>> 11e917a7b3aa87e6ff7ea433d22d2fedbfe895bf
   "position": "top",
   "mode": "dock",
   "reload_style_on_change": true,
@@ -12,7 +16,11 @@
 
   "modules-left": [
 
+<<<<<<< HEAD
     "custom/media",         // media info
+=======
+    //"custom/media",         // media info
+>>>>>>> 11e917a7b3aa87e6ff7ea433d22d2fedbfe895bf
     "custom/paddc"
     /*"custom/ws",            // window icon
     "custom/left1",
@@ -62,10 +70,18 @@
     "hyprland/window",       // window title
     //"custom/left6",
     //"pulseaudio",           // output device
+<<<<<<< HEAD
     "custom/left1",
     "hyprland/workspaces",
     "custom/left8",
     "clock#time",
+=======
+    "tray",
+    "custom/left1",
+    "hyprland/workspaces",
+    "custom/left8",
+    "clock#time"
+>>>>>>> 11e917a7b3aa87e6ff7ea433d22d2fedbfe895bf
     //"backlight",            // brightness
     //"custom/backlight",     // brightness
 
@@ -73,9 +89,14 @@
     //"clock#date",
     //"battery",              // battery
 
+<<<<<<< HEAD
     "custom/leftin2",
     //"custom/power",          // power button
     "tray"
+=======
+    //"custom/leftin2",
+    //"custom/power",          // power button
+>>>>>>> 11e917a7b3aa87e6ff7ea433d22d2fedbfe895bf
     
   ],
 // === Modules ===

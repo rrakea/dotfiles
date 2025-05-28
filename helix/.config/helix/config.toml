@@ -23,6 +23,10 @@ focus-lost = true
 after-delay.enable = true
 after-delay.timeout = 1000
 
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "warning"
+
 [keys.normal]
 C-l = "jump_view_right"
 C-h = "jump_view_left"
