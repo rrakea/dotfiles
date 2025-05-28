@@ -1,0 +1,37 @@
+theme = "tokyonight"
+
+[editor]
+line-number ="relative"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+left = ["mode", "file-name", "file-modification-indicator"]
+center = []
+right = ["diagnostics"]
+mode.normal = "[NORMAL]"
+mode.insert = "[INSERT]"
+mode.select = "[SELECT]"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 1000
+
+[keys.normal]
+C-l = "jump_view_right"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+
+C-n = "vsplit_new"
+C-q = "wclose"
+
+C-s = ":write-all"
+
+g = { l = ["select_mode", "goto_line_end", "normal_mode"]}

@@ -1,0 +1,16 @@
+enable_audio_bell no
+tab_bar_edge bottom
+tab_bar_style fade
+# background_opacity 0.6
+confirm_os_window_close 0
+
+
+layout horizontal
+font_size 13.0
+
+# BEGIN_KITTY_THEME
+# 1984 Light
+include current-theme.conf
+# END_KITTY_THEME
+
+close_on_child_death yes

@@ -1,0 +1,18 @@
+[[language]]
+name = "rust"
+formatter = { command = "rustfmt"}
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server.rust-analyzer.config.cargo]
+features = "all"
+
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+
+[language-server.golangci-lint-lsp.config]
+command = ["golangci-lint", "run", "--output.json.path=stdout", "--show-stats=false", "--issues-exit-code=1"]
