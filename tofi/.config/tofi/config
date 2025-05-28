@@ -1,0 +1,23 @@
+font-size = 12
+outline-color = #f38ba8
+outline-width = 0
+border-color = #f38ba8
+border-width = 0
+anchor = top-left
+
+hide-cursor = true
+width = 50%
+height = 20
+horizontal = true
+
+padding-bottom = 0
+padding-top = 2
+padding-left = 10
+padding-right = 0
+result-spacing = 15
+
+
+text-color       = #4c4f69
+prompt-color     = #d20f39
+selection-color  = #4c4f69
+background-color = #1e1e2e00

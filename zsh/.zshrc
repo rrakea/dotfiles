@@ -18,6 +18,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export PATH="/home/rrakea/config/scripts:$PATH"
+export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 fpath=(/usr/share/zsh/site-functions $fpath)
@@ -26,7 +27,7 @@ eval "$(oh-my-posh init zsh --config ~/.config/zsh/catppuccin_mocha.omp.json)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init --cmd cd zsh)"
 source <(fzf --zsh)
-source ~/clones/fzf-tab/fzf-tab.plugin.zsh
+source ~/clone/fzf-tab/fzf-tab.plugin.zsh
 
 # fzf theme:
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
@@ -49,7 +50,7 @@ alias fin='flatpak install'
 alias frm='flatpak uninstall'
 alias bin='brew install'
 alias brm='brew uninstall'
-alias conf='helix ~/config'
+alias conf='helix ~/conf'
 alias s='spf .'
 alias shutdown='shutdown 0'
 alias sys='btop'
@@ -62,5 +63,7 @@ alias h='helix .'
 alias e='exit'
 alias rga='rg --hidden --no-ignore'
 alias ff='fastfetch'
+alias zen='flatpak run app.zen_browser.zen&'
+alias disk='dust --reverse'
 
 

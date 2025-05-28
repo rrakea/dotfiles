@@ -1,7 +1,7 @@
 {
 
   "layer": "top",
-  "output": ["HDMI-A-1"],
+  "output": ["eDP-1"],
   "position": "top",
   "mode": "dock",
   "reload_style_on_change": true,
@@ -12,7 +12,7 @@
 
   "modules-left": [
 
-    "custom/media",         // media info
+    //"custom/media",         // media info
     "custom/paddc"
     /*"custom/ws",            // window icon
     "custom/left1",
@@ -62,10 +62,11 @@
     "hyprland/window",       // window title
     //"custom/left6",
     //"pulseaudio",           // output device
+    "tray",
     "custom/left1",
     "hyprland/workspaces",
     "custom/left8",
-    "clock#time",
+    "clock#time"
     //"backlight",            // brightness
     //"custom/backlight",     // brightness
 
@@ -73,9 +74,8 @@
     //"clock#date",
     //"battery",              // battery
 
-    "custom/leftin2",
+    //"custom/leftin2",
     //"custom/power",          // power button
-    "tray"
     
   ],
 // === Modules ===
