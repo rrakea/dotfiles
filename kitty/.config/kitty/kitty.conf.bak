@@ -1,7 +1,7 @@
 enable_audio_bell no
 tab_bar_edge bottom
 tab_bar_style fade
-background_opacity 0.8
+background_opacity 0.5
 confirm_os_window_close 0
 
 
@@ -9,7 +9,7 @@ layout horizontal
 font_size 13.0
 
 # BEGIN_KITTY_THEME
-# Rosé Pine Moon
+# Catppuccin-Latte
 include current-theme.conf
 # END_KITTY_THEME
 
