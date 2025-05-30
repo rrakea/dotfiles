@@ -21,6 +21,7 @@ hidden = false
 [editor.auto-save]
 focus-lost = true
 after-delay.enable = true
+after-delay.timeout = 1000
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
@@ -35,3 +36,6 @@ C-k = "jump_view_up"
 C-n = "vsplit_new"
 C-q = "wclose"
 
+C-s = ":write-all"
+
+g = { l = ["select_mode", "goto_line_end", "normal_mode"]}

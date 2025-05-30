@@ -17,7 +17,6 @@ unsetopt autocd beep extendedglob notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-export PATH="/home/rrakea/config/scripts:$PATH"
 export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
@@ -56,6 +55,7 @@ alias shutdown='shutdown 0'
 alias sys='btop'
 alias matrix='cmatrix -absr'
 alias md='mkdir -p'
+alias mdm='mkdir -p $1; cd $1'
 alias mf='touch'
 alias logout='hyprctl dispatch exit'
 alias vs='code .; exit'
@@ -63,7 +63,7 @@ alias h='helix .'
 alias e='exit'
 alias rga='rg --hidden --no-ignore'
 alias ff='fastfetch'
+alias disk='dust -r'
 alias zen='flatpak run app.zen_browser.zen&'
-alias disk='dust --reverse'
 
 

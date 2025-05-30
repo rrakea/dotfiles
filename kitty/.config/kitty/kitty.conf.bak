@@ -1,7 +1,15 @@
 enable_audio_bell no
 tab_bar_edge bottom
 tab_bar_style fade
+<<<<<<< HEAD
 background_opacity 0.5
+=======
+<<<<<<< HEAD
+# background_opacity 0.6
+=======
+background_opacity 0.8
+>>>>>>> 11e917a7b3aa87e6ff7ea433d22d2fedbfe895bf
+>>>>>>> ecb7513c2ee5297108a346fb0d46d9b13b17fdcc
 confirm_os_window_close 0
 
 
@@ -9,7 +17,15 @@ layout horizontal
 font_size 13.0
 
 # BEGIN_KITTY_THEME
+<<<<<<< HEAD
 # Catppuccin-Latte
+=======
+<<<<<<< HEAD
+# 1984 Light
+=======
+# Rosé Pine Moon
+>>>>>>> 11e917a7b3aa87e6ff7ea433d22d2fedbfe895bf
+>>>>>>> ecb7513c2ee5297108a346fb0d46d9b13b17fdcc
 include current-theme.conf
 # END_KITTY_THEME
 
