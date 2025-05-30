@@ -65,5 +65,3 @@ alias rga='rg --hidden --no-ignore'
 alias ff='fastfetch'
 alias disk='dust -r'
 alias zen='flatpak run app.zen_browser.zen&'
-
-
