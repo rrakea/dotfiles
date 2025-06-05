@@ -7,21 +7,21 @@
   "margin-bottom": 0,
   "margin-right": 10,
   "spacing": 0,
-
   "modules-left": [
     "custom/launcher",
     "custom/separator",
     "cpu",
     "memory",
-    "temperature",
+    // "temperature",
     "custom/separator",
     "custom/window-name",
     "custom/pacman-update-icon",
     "custom/pacman-update",
     "tray"
   ],
-
-  "modules-center": ["wlr/workspaces"],
+  "modules-center": [
+    "wlr/workspaces"
+  ],
   "modules-right": [
     "battery",
     "backlight",
@@ -31,7 +31,6 @@
     "custom/clock-icon",
     "clock"
   ],
-
   "wlr/workspaces": {
     "all-outputs": true,
     "active-only": false,
@@ -51,22 +50,18 @@
       "default": ""
     }
   },
-
   "tray": {
     "icon-size": 20,
     "spacing": 8
   },
-
   "custom/clock-icon": {
     "format": ""
   },
-
   "clock": {
     "format": "<b>{:%I:%M %p}</b>",
     "format-alt": "<b>{:%a.%d,%b}</b>",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
-
   "cpu": {
     "interval": 10,
     "format": " {usage}%",
@@ -83,7 +78,11 @@
     "device": "amdgpu_bl1",
     "format": "{icon} {percent}",
     "tooltip": false,
-    "format-icons": ["", "", ""]
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
   },
   "network": {
     "format-wifi": " {essid}",
@@ -92,7 +91,6 @@
     "tooltip": false,
     "format-disconnected": ""
   },
-
   "pulseaudio": {
     "format": "{icon} <b>{volume}</b>",
     "format-bluetooth": " ",
@@ -100,7 +98,11 @@
     "tooltip": false,
     "format-muted": "",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     },
     "on-click": "pavucontrol"
   },
@@ -113,7 +115,12 @@
     },
     "format": "{icon} {capacity}%",
     "format-charging": " {icon} {capacity}%",
-    "format-icons": [" ", " ", " ", " "],
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " "
+    ],
     "max-length": 25,
     "tooltip": false
   },
@@ -131,7 +138,6 @@
     "interval": 1,
     "exec": "hyprctl activewindow | grep class | awk '{print $2}'"
   },
-
   "custom-pacman-update-icon-background": {
     "format": ""
   },
@@ -145,18 +151,15 @@
     "signal": 8
   },
   "custom/window-icon": {},
-
   "temperature": {
     "thermal-zone": 0,
     "critical-threshold": 80,
     "format-critical": " {temperatureC}°C",
     "format": " {temperatureC}°C"
   },
-
   "custom/wrap-left": {
     "format": "<b>[</b>"
   },
-
   "custom/wrap-right": {
     "format": "<b>]</b>"
   }

@@ -11,20 +11,20 @@
   "modules-left": [
     "custom/launcher",
     "custom/separator",
-    "cpu",
-    "memory",
-    "temperature",
-    "custom/filler",
+   //"cpu",
+    //"memory",
+    //"temperature",
+    //"custom/filler",
     "custom/playerctl",
-    "custom/filler",
-    "disk",
-    "custom/filler",
+    //"custom/filler",
+    //"disk",
+    //"custom/filler",
     "custom/pacman"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "battery",
-    "custom/dot",
+   //"custom/dot",
     "backlight",
     "pulseaudio",
     "custom/dot",
@@ -158,7 +158,8 @@
     "format": "  "
   },
   "custom/launcher": {
-    "format": " 󰣇"
+  "format": " 󰣇",
+  "on-click": "app",
   },
   "custom/separator": {
     "format": " "
