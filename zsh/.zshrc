@@ -34,6 +34,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --border=none
     --info=inline-right
 '
+alias c.='cd ..'
 alias l='pwd; eza --icons=always'
 alias ls='pwd; eza --icons=always'
 alias ll='eza -l --icons=always -M --no-user --no-time --total-size --icons=always'
