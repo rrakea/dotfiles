@@ -22,7 +22,7 @@ export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 fpath=(/usr/share/zsh/site-functions $fpath)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# eval "$(oh-my-posh init zsh --config ~/.config/zsh/catppuccin_mocha.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/zsh/self.omp.json)"
 eval "$(thefuck --alias)"
 eval "$(zoxide init --cmd cd zsh)"
 source <(fzf --zsh)
@@ -36,7 +36,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 '
 
 # Prompt
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 alias c.='cd ..'
 alias l='pwd; eza --icons=always'

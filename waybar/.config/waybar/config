@@ -2,39 +2,30 @@
   "layer": "top",
   "height": 35,
   "margin-top": 10,
-  "margin-left": 10,
   "margin-bottom": 0,
-  "margin-right": 10,
+  "margin-left": 5,
+  "margin-right": 5,
+  
   "spacing": 0,
   "output": ["HDMI-A-1", "eDP-1"],
 
   "modules-left": [
     "custom/launcher",
-    //"custom/separator",
     "custom/dot",
-    //"cpu",
-    //"memory",
-    //"temperature",
-    //"custom/filler",
-    //"custom/playerctl",
-    //"custom/filler",
-    //"disk",
-    //"custom/filler",
     "custom/update",
     "custom/reload",
     "custom/pacman"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
-    "battery",
-   //"custom/dot",
-    "backlight",
     "pulseaudio",
-    //"custom/dot",
-    //"custom/separator",
+    "backlight",
+    "battery",
     "network",
     "custom/dot",
-    "clock"
+    "clock",
+    "custom/seperator",
+    "custom/dot<"
   ], 
   "custom/playerctl": {
       "format": "[<span foreground='#46c880'>  </span> <span>{}</span> ]",
@@ -127,7 +118,7 @@
     "format-alt" : "󰒢 {bandwidthTotalBits}",
     "on-click": "kitty nmtui",
     "on-click-right": "nm-connection-editor",
-    "format-ethernet": " wired",
+    "format-ethernet": "󰒢 lan",
     "tooltip-format": "{essid} {signalStrength}%",
     "format-disconnected": ""
   },
