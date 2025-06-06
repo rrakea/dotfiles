@@ -6,12 +6,13 @@
   "margin-bottom": 0,
   "margin-right": 10,
   "spacing": 0,
-  "output": ["HDMI-A-1"],
+  "output": ["HDMI-A-1", "eDP-1"],
 
   "modules-left": [
     "custom/launcher",
-    "custom/separator",
-   //"cpu",
+    //"custom/separator",
+    "custom/dot",
+    //"cpu",
     //"memory",
     //"temperature",
     //"custom/filler",
@@ -19,7 +20,9 @@
     //"custom/filler",
     //"disk",
     //"custom/filler",
-    "custom/pacman"
+    "custom/pacman",
+    "custom/reload",
+    "custom/update"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
@@ -27,8 +30,8 @@
    //"custom/dot",
     "backlight",
     "pulseaudio",
-    "custom/dot",
-    "custom/separator",
+    //"custom/dot",
+    //"custom/separator",
     "network",
     "custom/dot",
     "clock"
@@ -115,7 +118,7 @@
   },
   "backlight": {
     "device": "amdgpu_bl1",
-    "format": "{icon} {percent} ",
+    "format": "{icon} {percent}",
     "tooltip": false,
     "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
@@ -134,7 +137,7 @@
     "format-bluetooth": " {volume}",
     "format-bluetooth-muted": " ",
     "tooltip": false,
-    "format-muted": "",
+    "format-muted": "󰝟 00",
     "format-icons": {
       "default": ["󰝟", "", "󰕾" , ""]
     },
@@ -142,7 +145,6 @@
     "on-click-right": "pavucontrol"
   },
   "battery": {
-    "bat": "BAT0",
     "interval": 10,
     "states": {
       "warning": 30,
@@ -159,7 +161,15 @@
   },
   "custom/launcher": {
   "format": " 󰣇",
-  "on-click": "app",
+  "on-click": "/home/rrakea/code/scripts/app",
+  },
+  "custom/reload": {
+  "format": " ↻ ",
+  "on-click": "/home/rrakea/code/scripts/reload",
+  },
+  "custom/update": {
+  "format": " ⤓ ",
+  "on-click": "kitty update",
   },
   "custom/separator": {
     "format": " "
