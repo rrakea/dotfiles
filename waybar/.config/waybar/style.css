@@ -29,7 +29,8 @@ window#waybar {
 #temperature,
 #custom-update,
 #custom-reload,
-#custom-pacman {
+#custom-pacman,
+#custom-sys {
   font-size: 15px;
   background: #2a2d45;
   margin-top: 5px;
@@ -40,19 +41,24 @@ window#waybar {
 
 #custom-update {
   color: #eed49f;
-  padding: 0px 10px 0px 12px;
   border-radius: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 10px
 }
 
 #custom-reload {
   color: #a6da95;
-  padding: 0px 10px 0px 0px;
+  padding: 5px 5px 5px 5px
 }
 
 #custom-pacman {
   color: #8aadf4;
-  padding: 0px 12px 0px 0px;
   border-radius: 0px 5px 5px 0px;
+  padding: 5px 10px 5px 5px
+}
+
+#custom-sys {
+  color: #bb9af7;
+  padding: 5px 5px 5px 5px
 }
 
 #custom-window-name {

@@ -11,9 +11,11 @@
 
   "modules-left": [
     "custom/launcher",
-    "custom/dot",
+    "custom/separator",
+    "custom/separator",
     "custom/update",
     "custom/reload",
+    "custom/sys",
     "custom/pacman"
   ],
   "modules-center": ["hyprland/workspaces"],
@@ -22,10 +24,10 @@
     "backlight",
     "battery",
     "network",
-    "custom/dot",
+    "custom/separator",
+    //"custom/dot",
     "clock",
-    "custom/seperator",
-    "custom/dot<"
+    "custom/separator",
   ], 
   "custom/playerctl": {
       "format": "[<span foreground='#46c880'>  </span> <span>{}</span> ]",
@@ -163,6 +165,11 @@
   "custom/update": {
   "format": "⤓",
   "on-click": "kitty update",
+  "tooltip": false
+  },
+  "custom/sys": {
+  "format": " ",
+  "on-click": "kitty btop",
   "tooltip": false
   },
   "custom/separator": {
