@@ -16,13 +16,13 @@
     //"memory",
     //"temperature",
     //"custom/filler",
-    "custom/playerctl",
+    //"custom/playerctl",
     //"custom/filler",
     //"disk",
     //"custom/filler",
-    "custom/pacman",
+    "custom/update",
     "custom/reload",
-    "custom/update"
+    "custom/pacman"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
@@ -162,14 +162,17 @@
   "custom/launcher": {
   "format": " 󰣇",
   "on-click": "/home/rrakea/code/scripts/app",
+  "tooltip": false
   },
   "custom/reload": {
-  "format": " ↻ ",
+  "format": "↻",
   "on-click": "/home/rrakea/code/scripts/reload",
+  "tooltip": false
   },
   "custom/update": {
-  "format": " ⤓ ",
+  "format": "⤓",
   "on-click": "kitty update",
+  "tooltip": false
   },
   "custom/separator": {
     "format": " "
@@ -181,8 +184,9 @@
   },
 
  "custom/pacman": {
-   "format": "  ",
-   "on-click": "blueberry"
+   "format": "",
+   "on-click": "blueberry",
+  "tooltip": false
  },
   "custom-pacman-update-icon-background": {
     "format": ""

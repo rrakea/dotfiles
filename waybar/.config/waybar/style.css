@@ -52,27 +52,33 @@ window#waybar {
 
 #cpu,
 #memory,
-#temperature {
+#temperature,
+#custom-update,
+#custom-reload,
+#custom-pacman {
   font-size: 15px;
   background: #2a2d45;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-right: 10px;
-  margin-left: 10px
+  /*margin-right: 10px;
+  margin-left: 10px */
 }
 
-#cpu {
+#cpu,
+#custom-update {
   color: #eed49f;
   padding: 0px 10px 0px 12px;
   border-radius: 5px 0px 0px 5px;
 }
 
-#memory {
+#memory,
+#custom-reload {
   color: #a6da95;
   padding: 0px 10px 0px 0px;
 }
 
-#temperature {
+#temperature,
+#custom-pacman {
   color: #8aadf4;
   padding: 0px 12px 0px 0px;
   border-radius: 0px 5px 5px 0px;
@@ -83,7 +89,7 @@ window#waybar {
   margin-right: 10px;
   background-color: #1a1c2b;
 }
-
+/*
 #custom-pacman-update-icon {
   background-color: #68b0d6;
   color: #181926;
@@ -98,6 +104,7 @@ window#waybar {
   color: #8bd5ca;
   margin: 5px 10px 5px 0px;
 }
+*/
 
 #workspaces button:nth-child(1) label {
   color: #8aadf4;
@@ -190,13 +197,6 @@ window#waybar {
   background-color: #1a1c2b;
 }
 
-#custom-pacman,
-#custom-reload,
-#custom-update {
-  color: #68b0d6;
-  background-color: #1a1c2b;
-}
-
 #network {
   color: #c6a0f6;
   /* margin-right: 10px; */
@@ -220,6 +220,7 @@ window#waybar {
   background-color: #1a1c2b;
 }
 
+/*
 #custom-clock-icon {
   color: #cad3f5;
   padding-left: 10px;
@@ -228,6 +229,7 @@ window#waybar {
   margin-bottom: 5px;
   border-radius: 5px;
 }
+*/
 
 #custom-filler {
   color: #6e738d;
@@ -250,6 +252,12 @@ window#waybar {
 #clock {
   padding-left: 10px;
   color: #f5e0dc;
+  border-radius: 5px 5px 5px 5px;
+  background: #2a2d45;
+  font-size: 15px;
+  background: #2a2d45;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
