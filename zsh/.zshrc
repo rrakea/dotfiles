@@ -71,3 +71,7 @@ alias disk='dust -r'
 alias zen='flatpak run app.zen_browser.zen&'
 alias sky='astroterm -cCu'
 alias wiki='wiki-tui'
+
+mdc() {
+    mkdir -p "$1" && cd "$1"
+}
