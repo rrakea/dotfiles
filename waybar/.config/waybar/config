@@ -132,7 +132,7 @@
     "tooltip": false,
     "format-muted": "󰝟 00",
     "format-icons": {
-      "default": ["󰝟", "", "󰕾" , ""]
+      "default": ["", "", "󰕾" , "󰕾"]
     },
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol"
