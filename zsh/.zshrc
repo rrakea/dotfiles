@@ -34,8 +34,8 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 '
 
 alias c.='cd ..'
-alias l='pwd; eza --icons=always'
-alias ls='pwd; eza --icons=always'
+alias l='eza --icons=always'
+alias ls='eza --icons=always'
 alias ll='eza -l --icons=always -M --no-user --no-time --total-size --icons=always'
 alias la='eza -a --icons=always'
 alias lt='eza -T --icons=always'
@@ -55,7 +55,6 @@ alias shutdown='shutdown 0'
 alias sys='btop'
 alias matrix='cmatrix -absr'
 alias md='mkdir -p'
-alias mdm='mkdir -p $1; cd $1'
 alias mf='touch'
 alias logout='hyprctl dispatch exit'
 alias vs='code .; exit'
@@ -66,8 +65,13 @@ alias ff='fastfetch'
 alias disk='dust -r'
 alias zen='flatpak run app.zen_browser.zen&'
 alias sky='astroterm -cCu'
+alias wiki='wiki-tui'
 
 # Keybinds
 bindkey "^[[3~" delete-char
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+mdc() {
+    mkdir -p "$1" && cd "$1"
+}
