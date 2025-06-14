@@ -1,6 +1,4 @@
-
 # The following lines were added by compinstall
-
 zstyle ':completion:*' completer _complete _ignored _correct _approximate
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '' '' 'l:|=* r:|=*'
 zstyle :compinstall filename '/home/rrakea/.zshrc'
@@ -35,9 +33,6 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --info=inline-right
 '
 
-# Prompt
-# eval "$(starship init zsh)"
-
 alias c.='cd ..'
 alias l='pwd; eza --icons=always'
 alias ls='pwd; eza --icons=always'
@@ -71,3 +66,8 @@ alias ff='fastfetch'
 alias disk='dust -r'
 alias zen='flatpak run app.zen_browser.zen&'
 alias sky='astroterm -cCu'
+
+# Keybinds
+bindkey "^[[3~" delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
