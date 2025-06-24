@@ -75,3 +75,20 @@ bindkey "^[[1;5D" backward-word
 mdc() {
     mkdir -p "$1" && cd "$1"
 }
+
+hx() {
+    if p=$(zoxide query -i); then
+    	if [ -n "$p" ]; then
+    		cd "$p"
+    		helix "$p"
+    	fi
+    fi
+}
+
+vx() {
+    if p=$(zoxide query -i); then
+    	if [ -n "$p" ]; then
+    		code "$p"
+    	fi
+    fi
+}
