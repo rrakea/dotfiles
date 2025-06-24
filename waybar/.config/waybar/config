@@ -11,8 +11,9 @@
 
   "modules-left": [
     "custom/launcher",
-    "custom/separator",
-    "custom/separator",
+    //"custom/separator",
+    //"custom/separator",
+    "custom/dot",
     "custom/update",
     "custom/reload",
     "custom/sys",

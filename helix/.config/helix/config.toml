@@ -15,9 +15,6 @@ mode.normal = "[NORMAL]"
 mode.insert = "[INSERT]"
 mode.select = "[SELECT]"
 
-[editor.file-picker]
-hidden = false
-
 [editor.auto-save]
 focus-lost = true
 after-delay.enable = true
@@ -37,4 +34,4 @@ C-q = "wclose"
 
 C-s = ":write-all"
 
-g = { l = ["select_mode", "goto_line_end", "normal_mode"]}
+g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"]}
