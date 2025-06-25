@@ -21,7 +21,7 @@
 [pull]
 	rebase = false
 [core]
-	editor = helix
+	editor = hx
 	autocrlf = input
 [rerere]
 	enabled = true

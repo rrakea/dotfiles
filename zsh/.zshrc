@@ -18,6 +18,7 @@ bindkey -e
 export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export EDITOR='hx'
 fpath=(/usr/share/zsh/site-functions $fpath)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(oh-my-posh init zsh --config ~/.config/zsh/self.omp.json)"
@@ -49,7 +50,7 @@ alias fin='flatpak install'
 alias frm='flatpak uninstall'
 alias bin='brew install'
 alias brm='brew uninstall'
-alias conf='helix ~/conf'
+alias conf='hx ~/conf'
 alias s='spf .'
 alias shutdown='shutdown 0'
 alias sys='btop'
@@ -58,7 +59,7 @@ alias md='mkdir -p'
 alias mf='touch'
 alias logout='hyprctl dispatch exit'
 alias vs='code .; exit'
-alias h='helix .'
+alias h='hx .'
 alias e='exit'
 alias rga='rg --hidden --no-ignore'
 alias ff='fastfetch'
@@ -76,16 +77,15 @@ mdc() {
     mkdir -p "$1" && cd "$1"
 }
 
-hx() {
+hxi() {
     if p=$(zoxide query -i); then
     	if [ -n "$p" ]; then
-    		cd "$p"
-    		helix "$p"
+    		hx "$p"
     	fi
     fi
 }
 
-vx() {
+vxi() {
     if p=$(zoxide query -i); then
     	if [ -n "$p" ]; then
     		code "$p"
