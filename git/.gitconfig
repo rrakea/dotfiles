@@ -7,7 +7,7 @@
 [init]
 	defaultBranch = main
 [user]
-	email = konradburgi1@gmail.com
+	email = login@konradburgi.com
 	name = rrakea
 [alias]
 	graph = log --oneline --graph --decorate

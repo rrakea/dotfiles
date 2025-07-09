@@ -35,6 +35,6 @@ C-k = "jump_view_up"
 C-n = "vsplit_new"
 C-q = "wclose"
 
-C-s = ":write-all"
+C-s = ":format"
 
 g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"]}
