@@ -23,6 +23,18 @@ focus-lost = true
 after-delay.enable = true
 after-delay.timeout = 1000
 
+[keys.insert]
+C-l = "jump_view_right"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+
+C-n = "vsplit_new"
+C-q = "wclose"
+
+C-s = ":format"
+
+
 [keys.normal]
 c = "select_regex"
 s = "change_selection"
@@ -40,13 +52,9 @@ C-s = ":format"
 g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"]}
 
 ret = "add_newline_below"
+S-ret = "add_newline_above"
 
-# Yazi
-space = { y = [
-  ':sh rm -f /tmp/unique-file',
-  ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
-  ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
-  ':open %sh{cat /tmp/unique-file}',
-  ':redraw',
-  ':set mouse false',
-  ':set mouse true']}
+[keys.select]
+c = "select_regex"
+s = "change_selection"
+
