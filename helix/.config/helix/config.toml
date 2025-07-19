@@ -49,6 +49,8 @@ C-q = "wclose"
 
 C-s = ":format"
 
+"~" = ["collapse_selection", "switch_case"]
+
 g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"]}
 
 ret = "add_newline_below"
