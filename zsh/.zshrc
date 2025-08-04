@@ -17,6 +17,7 @@ bindkey -e
 
 export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export EDITOR='hx'
 fpath=(/usr/share/zsh/site-functions $fpath)
