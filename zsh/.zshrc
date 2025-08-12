@@ -68,6 +68,7 @@ alias disk='dust -r'
 alias zen='flatpak run app.zen_browser.zen&'
 alias sky='astroterm -cCu'
 alias wiki='wiki-tui'
+alias ai='gemini'
 
 # Keybinds
 bindkey "^[[3~" delete-char

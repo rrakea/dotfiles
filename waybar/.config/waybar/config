@@ -10,24 +10,25 @@
   "output": ["HDMI-A-1", "eDP-1"],
 
   "modules-left": [
-    "custom/launcher",
+    //"custom/launcher",
     //"custom/separator",
-    //"custom/separator",
-    "custom/dot",
+    "custom/separator",
     "custom/update",
     "custom/reload",
     "custom/sys",
-    "custom/pacman"
+    "custom/pacman",
+    "custom/dot",
+    "custom/window-name"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "clock",
+    "custom/dot",
     "pulseaudio",
     "backlight",
     "battery",
     "network",
     "custom/separator",
-    //"custom/dot",
-    "clock",
     "custom/separator",
   ], 
   "custom/playerctl": {
@@ -85,7 +86,7 @@
     "format": " "
   },
   "custom/dot": {
-    "format": " "
+    "format": "  "
   },
   "custom/clock-icon": {
     "format": ""
@@ -144,7 +145,7 @@
       "warning": 30,
       "critical": 15
     },
-    "format": " {icon} {capacity}%",
+    "format": "{icon} {capacity}%",
     "format-charging": "󰂄 {capacity}%",
     "format-icons": ["", "", "", "", "", "", "", "", "", ""],
     "max-length": 25,
