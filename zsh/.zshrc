@@ -71,6 +71,7 @@ alias sky='astroterm -cCu'
 alias wiki='wiki-tui'
 alias sha='sha256sum'
 alias shreload='source ~/.zshrc'
+alias ai='gemini'
 
 # Keybinds
 bindkey "^[[3~" delete-char

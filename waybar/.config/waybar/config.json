@@ -8,7 +8,7 @@
   "margin-right": 10,
   "spacing": 0,
   "modules-left": [
-    "custom/launcher",
+    // "custom/launcher",
     "custom/separator",
     "cpu",
     "memory",

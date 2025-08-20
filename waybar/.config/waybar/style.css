@@ -4,12 +4,12 @@
   font-family: JetBrainsMono Nerd Font;
   font-weight: bold;
   font-size: 16px;
-  background-color: #1a1c2b;
+  background-color: #141b29;
   /* Reduced opacity background */
 }
 
 .modules-right {
-  /* background-color: #1a1c2b; */
+  /* background-color: #141b29; */
   border-radius: 5px 0px 0px 5px;
 }
 
@@ -19,9 +19,9 @@
 
 #custom-launcher {
   font-size: 20px;
-  color: #00bfff;
+  color: #141b29;
   padding-right: 10px;
-  background-color: #1a1c2b;
+  background-color: #141b29;
 }
 
 #cpu,
@@ -32,7 +32,7 @@
 #custom-pacman,
 #custom-sys {
   font-size: 15px;
-  background: #2a2d45;
+  background: #f2e8d3;
   margin-top: 5px;
   margin-bottom: 5px;
   /*margin-right: 10px;
@@ -40,90 +40,81 @@
 }
 
 #custom-update {
-  color: #eed49f;
+  color: #141b29;
   border-radius: 5px 0px 0px 5px;
   padding: 5px 5px 5px 10px
 }
 
 #custom-reload {
-  color: #a6da95;
+  color: #141b29;
   padding: 5px 5px 5px 5px
 }
 
 #custom-pacman {
-  color: #8aadf4;
+  color: #141b29;
   border-radius: 0px 5px 5px 0px;
   padding: 5px 10px 5px 5px
 }
 
 #custom-sys {
-  color: #bb9af7;
+  color: #141b29;
   padding: 5px 5px 5px 5px
 }
 
 #custom-window-name {
-  color: #68b0d6;
+  color: #f2e8d3;
   margin-right: 10px;
-  background-color: #1a1c2b;
+  background-color: #141b29;
 }
 
 #workspaces button:nth-child(1) label {
-  color: #8aadf4;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(2) label {
-  color: #ed8796;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(3) label {
-  color: #a6da95;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(4) label {
-  color: #c6a0f6;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(5) label {
-  color: #f4dbd6;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(6) label {
-  color: #f5a97f;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(7) label {
-  color: #8bd5ca;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(8) label {
-  color: #68b0d6;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 #workspaces button:nth-child(9) label {
-  color: #aab1d3;
+  color: #141b29;
   margin: 0px 8px;
-  background-color: #1a1c2b;
 }
 
 
 #battery {
-  color: #a6da95;
+  color: #141b29;
   /* padding: 0px 10px 0px 10px; */
 }
 
@@ -132,7 +123,7 @@
 #network,
 #backlight {
   font-size: 15px;
-  background-color: #2a2d45;
+  background-color: #f2e8d3;
   margin-top: 5px;
   margin-bottom: 5px;
   /* margin-right: 2px;
@@ -141,43 +132,43 @@
 }
 
 #backlight {
-  color: #eed49f;
+  color: #141b29;
   /*padding: 0px 10px 0px 10px;
   border-radius: 5px 0px 0px 5px; */
 }
 
 #pulseaudio {
-  color: #91d7e3;
+  color: #141b29;
   border-radius: 5px 0px 0px 5px;
   /* padding: 0px 10px 0px 0px;
   border-radius: 0px 5px 5px 0px; */
 }
 
 #custom-right-arr {
-  color: #8aadf4;
-  background-color: #1a1c2b;
+  color: #141b29;
+  background-color: #141b29;
 }
 
 #network {
-  color: #c6a0f6;
+  color: #141b29;
   /* margin-right: 10px; */
   border-radius: 0px 5px 5px 0px;
 }
 
 #custom-dot {
-  color: #6e738d;
+  color: #f2e8d3;
   padding-right: 10px;
-  background-color: #1a1c2b;
+  background-color: #141b29;
 }
 
 #custom-dot-alt {
-  color: #a5adcb;
+  color: #141b29;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 #custom-filler {
-  color: #6e738d;
+  color: #141b29;
   padding-left: 0px;
   padding-right: 9px;
   margin-top: 5px;
@@ -186,7 +177,7 @@
 }
 
 #custom-filler2 {
-  color: #6e738d;
+  color: #141b29;
   padding-left: 3px;
   padding-right: 9px;
   margin-top: 5px;
@@ -196,11 +187,10 @@
 
 #clock {
   padding-left: 10px;
-  color: #f5e0dc;
+  color: #f2e8d3;
   border-radius: 5px 5px 5px 5px;
-  background: #2a2d45;
-  font-size: 15px;
-  background: #2a2d45;
+  background: #141b29;
+   font-size: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
