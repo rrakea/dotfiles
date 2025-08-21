@@ -17,6 +17,7 @@ bindkey -e
 
 export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export EDITOR='hx'
 fpath=(/usr/share/zsh/site-functions $fpath)
@@ -68,6 +69,8 @@ alias disk='dust -r'
 alias zen='flatpak run app.zen_browser.zen&'
 alias sky='astroterm -cCu'
 alias wiki='wiki-tui'
+alias sha='sha256sum'
+alias shreload='source ~/.zshrc'
 alias ai='gemini'
 
 # Keybinds
