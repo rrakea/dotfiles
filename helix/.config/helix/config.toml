@@ -4,11 +4,16 @@ theme = "tokyonight"
 line-number ="relative"
 color-modes = true
 
+[editor.lsp]
+enable = true
+display-messages = true
+display-progress-messages = true
+
 [editor.cursor-shape]
 insert = "bar"
 
 [editor.statusline]
-left = ["mode", "file-name", "file-modification-indicator"]
+left = ["mode", "file-name", "file-modification-indicator", "spinner"]
 center = []
 right = ["diagnostics"]
 mode.normal = "[NORMAL]"
@@ -29,7 +34,7 @@ C-h = "jump_view_left"
 C-j = "jump_view_down"
 C-k = "jump_view_up"
 
-C-n = "vsplit_new"
+C-n = ["vsplit_new", "file_picker"]
 C-q = "wclose"
 
 C-s = ":format"
@@ -44,14 +49,14 @@ C-h = "jump_view_left"
 C-j = "jump_view_down"
 C-k = "jump_view_up"
 
-C-n = "vsplit_new"
+C-n = ["vsplit_new", "file_picker"]
 C-q = "wclose"
 
 C-s = ":format"
 
 "~" = ["collapse_selection", "switch_case"]
 
-g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"]}
+g = { l = ["append_mode", "select_mode", "goto_line_end", "normal_mode"], h = ["insert_mode","select_mode", "goto_line_start", "normal_mode"]}
 
 ret = "add_newline_below"
 S-ret = "add_newline_above"
