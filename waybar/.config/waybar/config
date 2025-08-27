@@ -16,9 +16,9 @@
     "custom/update",
     "custom/reload",
     "custom/sys",
-    "custom/pacman",
-    "custom/dot",
-    "custom/window-name"
+    "custom/pacman"
+    //"custom/dot",
+    //"custom/window-name"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
