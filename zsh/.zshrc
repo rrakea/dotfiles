@@ -41,7 +41,6 @@ alias ls='eza --icons=always'
 alias ll='eza -l --icons=always -M --no-user --no-time --total-size --icons=always'
 alias la='eza -a --icons=always'
 alias lt='eza -T --icons=always'
-alias grep='grep --color=auto'
 alias c='clear'
 alias pin='sudo pacman -S --needed'
 alias prm='sudo pacman -Rns'
@@ -52,21 +51,16 @@ alias fin='flatpak install'
 alias frm='flatpak uninstall'
 alias bin='brew install'
 alias brm='brew uninstall'
-alias conf='hx ~/conf'
-alias s='spf .'
+alias conf='$EDITOR ~/conf'
 alias shutdown='shutdown 0'
 alias sys='btop'
 alias matrix='cmatrix -absr'
 alias md='mkdir -p'
 alias mf='touch'
 alias logout='hyprctl dispatch exit'
-alias vs='code .; exit'
-alias h='hx .'
-alias e='exit'
 alias rga='rg --hidden --no-ignore'
 alias ff='fastfetch'
 alias disk='dust -r'
-alias zen='flatpak run app.zen_browser.zen&'
 alias sky='astroterm -cCu'
 alias wiki='wiki-tui'
 alias sha='sha256sum'
@@ -108,3 +102,7 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+
+kitten icat /home/rrakea/img/wallpaper/girl-ascii.png
+kitty @ scroll-window start
+
