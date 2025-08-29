@@ -24,10 +24,9 @@
   "bar.media.show_active_only": true,
   "notifications.position": "bottom right",
   "bar.layouts": {
-    "0": {
+    "HDMI-A-1": {
       "left": [
         "dashboard",
-        "network",
         "bluetooth",
         "volume"
       ],
@@ -35,40 +34,13 @@
         "workspaces"
       ],
       "right": [
-        "battery",
-        "clock",
-        "media"
+        "clock"
       ]
     },
-    "1": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
-        "notifications"
-      ]
-    },
-    "2": {
-      "left": [
-        "dashboard",
-        "workspaces",
-        "windowtitle"
-      ],
-      "middle": [
-        "media"
-      ],
-      "right": [
-        "volume",
-        "clock",
-        "notifications"
-      ]
+    "*": {
+      "left": [],
+      "middle": [],
+      "right": []
     }
   },
   "menus.clock.weather.enabled": false,
