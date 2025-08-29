@@ -38,6 +38,21 @@
         "clock"
       ]
     },
+    "eDP-1": {
+      "left": [
+        "dashboard",
+        "bluetooth",
+        "volume"
+      ],
+      "middle": [
+        "workspaces"
+      ],
+      "right": [
+        "brightness",
+        "battery",
+        "clock"
+      ]
+    },
     "*": {
       "left": [],
       "middle": [],
