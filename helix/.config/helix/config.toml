@@ -1,7 +1,8 @@
-theme = "tokyonight"
+theme = "catppuccin_mocha"
 
 [editor]
 line-number ="relative"
+middle-click-paste = false
 color-modes = true
 
 [editor.lsp]
