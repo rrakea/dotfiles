@@ -22,7 +22,7 @@
   "bar.media.format": "{title}",
   "bar.media.show_label": true,
   "bar.media.show_active_only": true,
-  "notifications.position": "bottom right",
+  "notifications.position": "top right",
   "bar.layouts": {
     "HDMI-A-1": {
       "left": [
@@ -34,6 +34,7 @@
         "workspaces"
       ],
       "right": [
+        "media",
         "clock"
       ]
     },
@@ -489,5 +490,8 @@
   "wallpaper.image": "/home/rrakea/img/wallpaper/cover.png",
   "wallpaper.enable": false,
   "theme.matugen_settings.scheme_type": "monochrome",
-  "theme.matugen_settings.variation": "standard_1"
+  "theme.matugen_settings.variation": "standard_1",
+  "notifications.monitor": 1,
+  "notifications.showActionsOnHover": true,
+  "notifications.active_monitor": false
 }
