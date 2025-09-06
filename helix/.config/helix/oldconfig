@@ -1,0 +1,69 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number ="relative"
+middle-click-paste = false
+color-modes = true
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-progress-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+left = ["mode", "file-name", "file-modification-indicator", "spinner"]
+center = []
+right = ["diagnostics"]
+mode.normal = "[NORMAL]"
+mode.insert = "[INSERT]"
+mode.select = "[SELECT]"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 1000
+
+[keys.insert]
+C-l = "jump_view_right"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+
+C-n = ["vsplit_new", "file_picker"]
+C-q = "wclose"
+
+C-s = ":format"
+
+
+[keys.normal]
+c = "select_regex"
+s = "change_selection"
+
+C-l = "jump_view_right"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+
+C-n = ["vsplit_new", "file_picker"]
+C-q = "wclose"
+
+C-s = ":format"
+
+"~" = ["insert_mode", "normal_mode", "collapse_selection","switch_case"]
+
+g = { l = ["append_mode", "select_mode", "goto_line_end", "insert_mode", "normal_mode"],    h = ["insert_mode", "select_mode", "goto_line_start", "insert_mode", "normal_mode"]}
+space = { q = [":wqa!"]}
+
+ret = "add_newline_below"
+S-ret = "add_newline_above"
+
+[keys.select]
+c = "select_regex"
+s = "change_selection"
+

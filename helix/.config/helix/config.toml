@@ -1,9 +1,10 @@
 theme = "catppuccin_mocha"
 
 [editor]
-line-number ="relative"
+line-number = "relative"
 middle-click-paste = false
 color-modes = true
+load-default-keymap = true
 
 [editor.lsp]
 enable = true
@@ -29,41 +30,88 @@ focus-lost = true
 after-delay.enable = true
 after-delay.timeout = 1000
 
-[keys.insert]
-C-l = "jump_view_right"
-C-h = "jump_view_left"
-C-j = "jump_view_down"
-C-k = "jump_view_up"
-
-C-n = ["vsplit_new", "file_picker"]
-C-q = "wclose"
-
-C-s = ":format"
-
-
 [keys.normal]
-c = "select_regex"
-s = "change_selection"
+h = "move_char_left"
+j = "move_visual_line_down"
+k = "move_visual_line_up"
+l = "move_char_right"
+w = "move_next_word_start"
+b = "move_prev_word_start"
+W = "move_next_long_word_start"
+B = "move_prev_long_word_start"
+t = "find_till_char"
+f = "find_next_char"
+T = "till_prev_char"
+F = "find_prev_char"
 
-C-l = "jump_view_right"
-C-h = "jump_view_left"
-C-j = "jump_view_down"
-C-k = "jump_view_up"
+g = [
+  "append_mode",
+  "select_mode",
+  "goto_line_end",
+  "insert_mode",
+  "normal_mode",
+]
 
-C-n = ["vsplit_new", "file_picker"]
-C-q = "wclose"
+s = [
+  "insert_mode",
+  "select_mode",
+  "goto_line_start",
+  "insert_mode",
+  "normal_mode",
+]
 
-C-s = ":format"
+i = "insert_mode"
+a = "append_mode"
+I = "insert_at_line_start"
+A = "insert_at_line_end"
+o = "open_below"
+O = "open_above"
+v = "select_mode"
 
-"~" = ["insert_mode", "normal_mode", "collapse_selection","switch_case"]
+u = "undo"
+U = "redo"
 
-g = { l = ["append_mode", "select_mode", "goto_line_end", "insert_mode", "normal_mode"],    h = ["insert_mode", "select_mode", "goto_line_start", "insert_mode", "normal_mode"]}
-space = { q = [":wqa!"]}
+y = "yank"
+d = "delete_selection"
+c = "change_selection"
+r = "replace"
+p = ["open_below", "paste_after"]
+P = "paste_after"
+x = "extend_to_line_bounds"
 
+">" = "indent"
+"<" = "unindent"
 ret = "add_newline_below"
 S-ret = "add_newline_above"
+"%" = "select_all"
+"/" = "search"
+n = "search_next"
+N = "search_prev"
+"{" = "goto_next_function"
+"}" = "goto_prev_function"
+
+[keys.normal.space]
+n = ["vsplit_new", "file_picker"]
+x = ":wqa!"
+q = "wclose"
+w = "rotate_view"
+
+g = "goto_line"
+s = ":format"
+f = "file_picker"
+d = "diagnostics_picker"
+r = "rename_symbol"
+k = "hover"
+"/" = "global_search"
+"?" = "command_palette"
+
+y = "yank_to_clipboard"
+p = ["open_below", "paste_clipboard_after"]
+c = "toggle_comments"
+C = "toggle_block_comments"
+
+[keys.normal.m]
+
+[keys.insert]
 
 [keys.select]
-c = "select_regex"
-s = "change_selection"
-
