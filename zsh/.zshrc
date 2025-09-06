@@ -20,6 +20,7 @@ export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export EDITOR='hx'
+export HELIX_RUNTIME=/home/rrakea/code/proj/helix-unmap/runtime
 fpath=(/usr/share/zsh/site-functions $fpath)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(oh-my-posh init zsh --config ~/.config/zsh/self.omp.json)"
