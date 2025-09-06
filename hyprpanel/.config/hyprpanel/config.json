@@ -41,6 +41,7 @@
     "eDP-1": {
       "left": [
         "dashboard",
+        "network",
         "bluetooth",
         "volume"
       ],
@@ -48,6 +49,7 @@
         "workspaces"
       ],
       "right": [
+        "media",
         "brightness",
         "battery",
         "clock"
