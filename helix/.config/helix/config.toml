@@ -4,7 +4,7 @@ theme = "catppuccin_mocha"
 line-number = "relative"
 middle-click-paste = false
 color-modes = true
-load-default-keymap = true
+load-default-keymap = false
 
 [editor.lsp]
 enable = true
@@ -67,6 +67,7 @@ A = "insert_at_line_end"
 o = "open_below"
 O = "open_above"
 v = "select_mode"
+":" =  "command_mode"
 
 u = "undo"
 U = "redo"
@@ -110,8 +111,13 @@ p = ["open_below", "paste_clipboard_after"]
 c = "toggle_comments"
 C = "toggle_block_comments"
 
-[keys.normal.m]
-
 [keys.insert]
+esc = "normal_mode"
+backspace = "delete_char_backward"
+del = "delete_char_forward"
+tab = "smart_tab"
+ret = "insert_newline"
+
 
 [keys.select]
+esc = "normal_mode"
