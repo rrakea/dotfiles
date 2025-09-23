@@ -41,6 +41,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 alias c.='cd ..'
 alias l='eza --icons=always'
 alias ls='eza --icons=always'
+alias lss='eza --icons=always | rg '
 alias ll='eza -l --icons=always -M --no-user --no-time --total-size --icons=always'
 alias la='eza -a --icons=always'
 alias lt='eza -T --icons=always'
@@ -106,6 +107,6 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-kitten icat /home/rrakea/img/wallpaper/girl-ascii.png
-kitty @ scroll-window start
+# kitten icat /home/rrakea/img/wallpaper/girl-ascii.png
+# kitty @ scroll-window start
 
