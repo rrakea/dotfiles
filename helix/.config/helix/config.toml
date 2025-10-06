@@ -75,6 +75,8 @@ x = "extend_to_line_bounds"
 C = "copy_selection_on_next_line"
 "," = "keep_primary_selection"
 
+e = "select_regex"
+
 ">" = "indent"
 "<" = "unindent"
 ret = "add_newline_below"
@@ -141,4 +143,6 @@ s = "extend_to_line_start"
 x = "extend_to_line_bounds"
 
 d = "delete_selection"
+c = "change_selection"
+y = "yank"
 
