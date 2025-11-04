@@ -40,6 +40,11 @@ j = "move_visual_line_down"
 k = "move_visual_line_up"
 l = "move_char_right"
 
+left = "move_char_left"
+down = "move_visual_line_down"
+up = "move_visual_line_up"
+right = "move_char_right"
+
 w = "move_next_word_start"
 b = "move_prev_word_start"
 W = "move_next_long_word_start"
@@ -89,23 +94,24 @@ N = "search_prev"
 "{" = "goto_prev_function"
 
 esc = "collapse_selection"
+tab = "rotate_view"
 
 [keys.normal.space]
 n = ["vsplit_new", "file_picker"]
 x = ":wqa!"
-q = "wclose"
-w = "rotate_view"
+q = ":wq"
 
-g = "goto_file_start"
-e = "goto_last_line"
+e = "hover"
 s = ":format"
 f = "file_picker"
 d = "diagnostics_picker"
 r = "rename_symbol"
 m = "goto_implementation"
-k = "hover"
 "/" = "global_search"
 "?" = "command_palette"
+
+j = "goto_last_line"
+k = "goto_file_start"
 
 y = "yank_to_clipboard"
 p = ["open_below", "paste_clipboard_after"]
@@ -115,6 +121,7 @@ C = "toggle_block_comments"
 [keys.insert]
 esc = "normal_mode"
 backspace = "delete_char_backward"
+S-backspace = "delete_char_backward"
 del = "delete_char_forward"
 tab = "smart_tab"
 ret = "insert_newline"

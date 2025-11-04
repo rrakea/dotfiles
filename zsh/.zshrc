@@ -110,4 +110,3 @@ function y() {
 
 # kitten icat /home/rrakea/img/wallpaper/girl-ascii.png
 # kitty @ scroll-window start
-
