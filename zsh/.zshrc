@@ -19,6 +19,7 @@ export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="/opt/brew/bin:$PATH"
 export HELIX_RUNTIME=~/src/helix/runtime
 
 export EDITOR='hx'
@@ -44,7 +45,7 @@ alias ls='eza --icons=always'
 alias lss='eza --icons=always | rg '
 alias ll='eza -a -l --icons=always -M --no-user --no-time --total-size --icons=always'
 alias la='eza -a --icons=always'
-alias lt='eza -T --icons=always'
+alias lt='eza -T --icons=always --git-ignore'
 alias c='clear'
 alias pin='sudo pacman -S --needed'
 alias prm='sudo pacman -Rns'
