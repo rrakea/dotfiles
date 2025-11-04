@@ -19,6 +19,7 @@ export PATH="/home/rrakea/code/scripts:$PATH"
 export PATH="/home/rrakea/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="/opt/miniconda3/bin:$PATH"
 export HELIX_RUNTIME=~/src/helix/runtime
 
 export EDITOR='hx'
