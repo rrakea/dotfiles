@@ -34,66 +34,26 @@ cursor-line = "disable"
 other-lines = "disable"
 
 [keys.normal]
-h = "move_char_left"
-j = "move_visual_line_down"
-k = "move_visual_line_up"
-l = "move_char_right"
+L = ["collapse_selection", "extend_to_line_end"]
+H = ["collapse_selection","extend_to_line_start"]
+J = "goto_last_line"
+K = "goto_file_start"
 
-left = "move_char_left"
-down = "move_visual_line_down"
-up = "move_visual_line_up"
-right = "move_char_right"
-
-w = "move_next_word_start"
-b = "move_prev_word_start"
-W = "move_next_long_word_start"
-B = "move_prev_long_word_start"
-t = "find_till_char"
-f = "find_next_char"
-T = "till_prev_char"
-F = "find_prev_char"
-
-g = ["collapse_selection", "extend_to_line_end"]
-s = ["collapse_selection","extend_to_line_start"]
-
-i = "insert_mode"
-a = "append_mode"
-I = "insert_at_line_start"
-A = "insert_at_line_end"
-o = "open_below"
-O = "open_above"
-v = "select_mode"
-":" =  "command_mode"
-
-u = "undo"
-U = "redo"
-
-y = "yank"
-d = "delete_selection"
-c = "change_selection"
-r = "replace"
 p = "paste_after"
 P = "paste_after"
 x = "extend_to_line_bounds"
 
-C = "copy_selection_on_next_line"
-"," = "keep_primary_selection"
-
 e = "select_regex"
 
-">" = "indent"
-"<" = "unindent"
 ret = "add_newline_below"
 S-ret = "add_newline_above"
-"%" = "select_all"
-"/" = "search"
-n = "search_next"
-N = "search_prev"
 "}" = "goto_next_function"
 "{" = "goto_prev_function"
 
 esc = "collapse_selection"
 tab = "rotate_view"
+
+"~" = ["ensure_selections_forward", "flip_selections", "collapse_selection", "switch_case"]
 
 [keys.normal.space]
 n = ["vsplit_new", "file_picker"]
@@ -102,53 +62,7 @@ q = ":wq"
 
 e = "hover"
 s = ":format"
-f = "file_picker"
-d = "diagnostics_picker"
-r = "rename_symbol"
 m = "goto_implementation"
-"/" = "global_search"
-"?" = "command_palette"
 
-j = "goto_last_line"
-k = "goto_file_start"
-
-y = "yank_to_clipboard"
 p = ["open_below", "paste_clipboard_after"]
-c = "toggle_comments"
-C = "toggle_block_comments"
-
-[keys.insert]
-esc = "normal_mode"
-backspace = "delete_char_backward"
-S-backspace = "delete_char_backward"
-del = "delete_char_forward"
-tab = "smart_tab"
-ret = "insert_newline"
-
-
-[keys.select]
-esc = "normal_mode"
-h = "extend_char_left"
-j = "extend_visual_line_down"
-k = "extend_visual_line_up"
-l = "extend_char_right"
-
-w = "extend_next_word_start"
-b = "extend_prev_word_start"
-W = "extend_next_long_word_start"
-B = "extend_prev_long_word_start"
-
-t = "extend_till_char"
-f = "extend_next_char"
-T = "extend_till_prev_char"
-F = "extend_prev_char"
-
-g = "extend_to_line_end"
-s = "extend_to_line_start"
-
-x = "extend_to_line_bounds"
-
-d = "delete_selection"
-c = "change_selection"
-y = "yank"
-
+t = ":new-term"
