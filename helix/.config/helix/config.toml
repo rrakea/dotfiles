@@ -4,7 +4,6 @@ theme = "catppuccin_mocha"
 line-number = "relative"
 middle-click-paste = false
 color-modes = true
-load-default-keymap = false
 
 [editor.lsp]
 enable = true
@@ -54,8 +53,8 @@ f = "find_next_char"
 T = "till_prev_char"
 F = "find_prev_char"
 
-g = "extend_to_line_end"
-s = "extend_to_line_start"
+g = ["collapse_selection", "extend_to_line_end"]
+s = ["collapse_selection","extend_to_line_start"]
 
 i = "insert_mode"
 a = "append_mode"

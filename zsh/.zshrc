@@ -60,7 +60,9 @@ alias brm='brew uninstall'
 alias conf='$EDITOR ~/conf'
 alias shutdown='shutdown 0'
 alias sys='btop'
+alias sync='rclone bisync ~/drive drive:'
 alias matrix='cmatrix -absr'
+alias build='cargo build -r; cargo build'
 alias md='mkdir -p'
 alias mf='touch'
 alias logout='hyprctl dispatch exit'
@@ -73,7 +75,7 @@ alias sha='sha256sum'
 alias shreload='source ~/.zshrc'
 alias ai='copilot --banner --resume'
 alias bonsai='cbonsai -li --color=255,255,255,255'
-alias rain='terminal-rain'
+alias screenshot='hyprshot -m region'
 
 # Keybinds
 bindkey "^[[3~" delete-char
@@ -100,14 +102,16 @@ vxi() {
     fi
 }
 
-# Move to dir at the end of yazi
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
+clone() {
+    cd ~/clone
+    git clone $1 --depth=1 --progress && cd "$(basename "$1" .git)"
 }
 
-# kitten icat /home/rrakea/img/wallpaper/girl-ascii.png
-# kitty @ scroll-window start
+help() {
+    man $1 $2 | hx
+}
+
+osreload() {
+    hyprctl reload
+}
+
