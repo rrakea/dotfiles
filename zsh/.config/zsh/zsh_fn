@@ -1,0 +1,97 @@
+mdc() {
+    mkdir -p "$1" && cd "$1"
+}
+
+hxi() {
+    if p=$(zoxide query -i); then
+    	if [ -n "$p" ]; then
+    		hx "$p"
+    	fi
+    fi
+}
+
+clone() {
+    cd ~/clone
+    git clone $1 --depth=1 --progress && cd "$(basename "$1" .git)"
+}
+
+help() {
+    man $1 $2 | hx
+}
+
+osreload() {
+    hyprctl reload
+}
+
+apps() {
+    for dir in ${(s/:/)PATH}
+    do
+        if [ -r $dir ]; then
+	        ls $dir | rg $1
+        fi
+    done
+}
+
+commit() {
+    git commit -a 
+    git pull origin $1
+    git push origin $1
+}
+
+update() {
+    sudo pacman -Syu
+    yay -Syu
+    flatpak update
+    rustup update
+    brew update
+    npm update
+}
+
+clean_deps() {
+    sudo pacman -Rns $(pacman -Qdtq)
+    yay -Rns $(yay -Qdtq)
+}
+
+clean_cache() {
+    sudo pacman -Scc
+    yay -Scc
+}
+
+sync() {
+    /usr/bin/rclone bisync /home/rrakea/drive drive: --track-renames --verbose --max-size 1b
+}
+
+nw() {
+    case $1 in
+        on)
+        nmcli networking on
+        ;;
+
+        off)
+        nmcli networking off
+        ;;
+
+        restart)
+        nmcli networking off
+        nmcli networking on
+        ;;
+
+        search)
+        nw=$(nmcli -f SSID device wifi list --rescan yes | tail -n +2 | awk '!seen[$0]++' | head -n 5)
+        print -P "%F{blue}${nw}"
+        ;;
+
+        con)
+        read "?Wifi Name: " name
+        nmcli device wifi connect $name
+        ;;
+
+        discon)
+        nmcli device disconnect wlan0
+        ;;
+
+        *)
+        echo "Commands: on; off; restart; search; con; discon"
+        ;;
+    esac    
+}
