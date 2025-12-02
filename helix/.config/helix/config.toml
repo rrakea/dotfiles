@@ -65,4 +65,3 @@ s = ":format"
 m = "goto_implementation"
 
 p = ["open_below", "paste_clipboard_after"]
-t = ":new-term"
