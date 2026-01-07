@@ -58,8 +58,8 @@ clean_cache() {
     yay -Scc
 }
 
-sync() {
-    /usr/bin/rclone bisync /home/rrakea/drive drive: --verbose --no-slow-hash 
+proc() {
+    ps -a | rg $1
 }
 
 nw() {
