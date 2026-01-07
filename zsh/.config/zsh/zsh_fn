@@ -33,7 +33,8 @@ apps() {
 }
 
 commit() {
-    git commit -a 
+    git add .
+    git commit
     git pull origin $1
     git push origin $1
 }
@@ -55,10 +56,6 @@ clean_deps() {
 clean_cache() {
     sudo pacman -Scc
     yay -Scc
-}
-
-sync() {
-    /usr/bin/rclone bisync /home/rrakea/drive drive: --track-renames --verbose
 }
 
 proc() {

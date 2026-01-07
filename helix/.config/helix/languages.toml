@@ -1,18 +1,22 @@
 [[language]]
 name = "rust"
-formatter = { command = "rustfmt --edition 2024"}
+formatter = { command = "rustfmt" }
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "gofmt" }
+
+[[language]]
+name = "java"
+auto-format = true
+formatter = { command = "google-java-format -r"}
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 
 [language-server.rust-analyzer.config.cargo]
 features = "all"
-
-
-[[language]]
-name = "go"
-auto-format = true
-formatter = { command = "gofmt" }
 
 [language-server.golangci-lint-lsp.config]
 command = ["golangci-lint", "run", "--output.json.path=stdout", "--show-stats=false", "--issues-exit-code=1"]
