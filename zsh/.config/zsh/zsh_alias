@@ -33,4 +33,4 @@ alias shreload='source ~/.zshrc'
 alias ai='copilot --banner --resume'
 alias bonsai='cbonsai -li --color=255,255,255,255'
 alias screenshot='hyprshot -m region'
-
+alias vs='code .; exit'

@@ -55,6 +55,23 @@ tab = "rotate_view"
 
 "~" = ["ensure_selections_forward", "flip_selections", "collapse_selection", "switch_case"]
 
+[keys.select]
+L = ["collapse_selection", "extend_to_line_end"]
+H = ["collapse_selection","extend_to_line_start"]
+J = "goto_last_line"
+K = "goto_file_start"
+
+p = "paste_after"
+P = "paste_after"
+x = "extend_to_line_bounds"
+
+ret = "add_newline_below"
+S-ret = "add_newline_above"
+"}" = "goto_next_function"
+"{" = "goto_prev_function"
+
+tab = "rotate_view"
+
 [keys.normal.space]
 n = ["vsplit_new", "file_picker"]
 x = ":wqa!"

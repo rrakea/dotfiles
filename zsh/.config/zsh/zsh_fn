@@ -58,7 +58,11 @@ clean_cache() {
 }
 
 sync() {
-    /usr/bin/rclone bisync /home/rrakea/drive drive: --track-renames --verbose --max-size 1b
+    /usr/bin/rclone bisync /home/rrakea/drive drive: --track-renames --verbose
+}
+
+proc() {
+    ps -a | rg $1
 }
 
 nw() {
