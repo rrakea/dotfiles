@@ -1,4 +1,11 @@
-source /home/rrakea/.config/nushell/catppuccin_macchiato.nu
+$env.config = {
+  buffer_editor: "hx"
+  show_banner: false
+}
+
+$env.PROMPT_COMMAND_RIGHT = ""
+$env.TRANSIENT_PROMPT_COMMAND = ""
+$env.PATH ++= ['~/.local/bin', '~/.cargo/bin', '~/go/bin']
 
 alias conf = hx ~/conf
 alias c. = cd ..
@@ -14,10 +21,8 @@ alias disk = dust -r
 alias h. = hx . 
 alias sys = btop
 alias irl = shutdown 0
-
 alias osreload = hyprctl reload
 
-$env.PATH ++= ['~/.local/bin', '~/.cargo/bin', '~/go/bin']
 
 def v. [] {
   code . 
@@ -57,4 +62,14 @@ def apps [] {
   $env.PATH | each {|dir| ls $dir}
 }
 
-source "~/.zoxide.nu"
+def dotfiles [] {
+  cd ~/conf
+  ls | where type == dir | get name | each {
+    |pkg| stow $pkg
+  }
+}
+
+source ~/.zoxide.nu
+source ~/.config/nushell/catppuccin_macchiato.nu
+
+fastfetch
