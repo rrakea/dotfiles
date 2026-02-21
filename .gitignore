@@ -2,3 +2,4 @@ hypr/.config/hypr/pc.conf
 zsh/.config/zsh/.histfile
 zsh/.config/zsh/histfile
 helix/.config/helix/runtime
+nu/.config/nushell/history.txt
