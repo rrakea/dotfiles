@@ -1,0 +1,100 @@
+ls
+ps
+ps | top 20
+ps | top
+man top
+ps | head 20
+chsh nu
+chsh -s nu
+which nu
+chsh -s /usr/bin/nu
+exit
+clear
+echo $config
+echo $env.config
+tldr code
+confign u
+config nu
+c
+clear
+cd .config/nushell/
+l
+ls
+hx .
+config
+exit
+ls
+config nu
+config
+config use-colors
+config env
+clear
+config nu
+exit
+config
+nu config
+confgi nu
+config nu
+exit
+ls
+exit
+config nu
+cd .config/nushell/
+hx .
+cd conf
+cd ~/conf
+l
+ls
+ls -l
+exit
+conf
+close
+nu -h
+nu
+conf
+code ~/code
+code ~/conf
+cd rosa
+cd code
+apps
+echo .local/bin
+ls .local/bin
+path hel
+path help
+help path
+cd conf
+l
+mdc test
+l
+mdc test
+c.
+rm test
+l
+c
+cd conf
+ls
+rm fastfetch/
+rm -rf fastfetch/
+rm -rf nvim
+rm -rf quickshell/
+rm -rf rofi/
+rm -rf superfile/
+l
+rm -rf yazi
+rm -rf waybar/
+rm -rf wezterm/
+l
+cat TODO
+rm TODO
+sys
+rm -rf hyprpanel/
+rm test
+rm -rf tofi
+c
+l
+rm -rf zsh
+l
+git commit -a
+c
+git status
+l
