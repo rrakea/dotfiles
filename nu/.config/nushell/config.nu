@@ -55,8 +55,9 @@ def update [] {
 }
 
 def clean [] {
-  let pres = (pacman -Qdtq)
-  sudo pacman -Rns $pres
+  (pacman -Qdtq) | lines | each { |pkg|
+    sudo pacman -Rns --noconfirm $pkg
+  }
 
   let yres = (yay -Qdtq)
   sudo yay -Rns $yres
