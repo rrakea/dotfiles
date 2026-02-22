@@ -10,6 +10,10 @@ hxi() {
     fi
 }
 
+drive() {
+    /usr/bin/rclone mount proton: ~/proton --vfs-cache-mode full --buffer-size 128M 
+}
+
 clone() {
     cd ~/clone
     git clone $1 --depth=1 --progress && cd "$(basename "$1" .git)"
@@ -84,7 +88,7 @@ nw() {
 
         con)
         read "?Wifi Name: " name
-        nmcli device wifi connect $name
+        nmcli device wifi connect $name --ask
         ;;
 
         discon)
