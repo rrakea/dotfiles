@@ -69,6 +69,13 @@ def dotfiles [] {
   }
 }
 
+def g [branch] {
+  git add .
+  git commit
+  git pull origin $branch
+  git push origin $branch
+}
+
 source ~/.zoxide.nu
 source ~/.config/nushell/catppuccin_macchiato.nu
 
