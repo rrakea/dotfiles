@@ -3,3 +3,5 @@ zsh/.config/zsh/.histfile
 zsh/.config/zsh/histfile
 helix/.config/helix/runtime
 nu/.config/nushell/history.txt
+dms/.config/DankMaterialShell/plugins
+dms/.config/DankMaterialShell/plugin_settings.json
