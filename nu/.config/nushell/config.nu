@@ -10,6 +10,7 @@ $env.PATH ++= ['~/.local/bin', '~/.cargo/bin', '~/go/bin']
 alias conf = hx ~/conf
 alias c. = cd ..
 alias l = ls
+alias ls = ls -a
 alias lss = ls | rg
 alias c = clear
 alias i = yay -S --needed
@@ -26,6 +27,12 @@ alias osreload = hyprctl reload
 
 def v. [] {
   code . 
+  exit
+}
+
+def rosa [] {
+  cd ~/code/rosa
+  code .
   exit
 }
 
@@ -48,11 +55,11 @@ def update [] {
 }
 
 def clean [] {
-  let pres = pacman -Qdtq
+  let pres = (pacman -Qdtq)
   sudo pacman -Rns $pres
 
-  let yres = yay -Qdtq
-  yay -Rns yres
+  let yres = (yay -Qdtq)
+  sudo yay -Rns $yres
 
   sudo pacman -Scc
   yay -Scc

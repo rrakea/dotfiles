@@ -1,1 +1,1 @@
-zoxide init nushell | save -f ~/.zoxide.nu
+zoxide init nushell --cmd cd | save -f ~/.zoxide.nu
