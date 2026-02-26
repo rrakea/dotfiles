@@ -77,7 +77,7 @@ def dotfiles [] {
   }
 }
 
-def g [branch] {
+def g [branch = "main"] {
   git add .
   git commit
   git pull origin $branch
