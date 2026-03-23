@@ -75,8 +75,8 @@
   "controlCenterShowPrinterIcon": false,
   "controlCenterShowScreenSharingIcon": true,
   "showPrivacyButton": true,
-  "privacyShowMicIcon": false,
-  "privacyShowCameraIcon": false,
+  "privacyShowMicIcon": true,
+  "privacyShowCameraIcon": true,
   "privacyShowScreenShareIcon": false,
   "controlCenterWidgets": [
     {
