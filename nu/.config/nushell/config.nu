@@ -1,13 +1,14 @@
 $env.config = {
-  buffer_editor: "hx"
+  buffer_editor: "helix"
   show_banner: false
 }
 
 $env.PROMPT_COMMAND_RIGHT = ""
 $env.TRANSIENT_PROMPT_COMMAND = ""
 $env.PATH ++= ['~/.local/bin', '~/.cargo/bin', '~/go/bin']
+$env.HELIX_RUNTIME = "~/.config/helix/runtime"
 
-alias conf = hx ~/conf
+alias conf = helix ~/conf
 alias c. = cd ..
 alias l = ls
 alias ls = ls -a
@@ -19,7 +20,7 @@ alias mf = touch
 alias rga = rg --hidden --no-ignore
 alias fda = fd --hidden --no-ignore
 alias disk = dust -r
-alias h. = hx . 
+alias h. = helix . 
 alias sys = btop
 alias irl = shutdown 0
 alias osreload = hyprctl reload
@@ -32,7 +33,7 @@ def v. [] {
 
 def rosa [] {
   cd ~/code/rosa
-  code .
+  helix .
   exit
 }
 
@@ -66,10 +67,6 @@ def clean [] {
   yay -Scc
 }
 
-def apps [] {
-  $env.PATH | each {|dir| ls $dir}
-}
-
 def dotfiles [] {
   cd ~/conf
   ls | where type == dir | get name | each {
@@ -77,12 +74,23 @@ def dotfiles [] {
   }
 }
 
-def g [branch = "main"] {
+def g [remote = "origin", branch = "main"] {
   git add .
   git commit
-  git pull origin $branch
-  git push origin $branch
+  git pull $remote $branch
+  git push $remote $branch
 }
+
+def apps [] {
+  $env.PATH | each {
+    |p| ls ($p | path expand)} | flatten 
+}
+
+def keygen [name, passphrase = ""] {
+  let path = [$env.HOME, ".ssh", $name] | path join
+  ssh-keygen -a 100 -t ed25519 -f $path -N $passphrase
+  cat ([$path, ".pub"] | str join)
+ }
 
 source ~/.zoxide.nu
 source ~/.config/nushell/catppuccin_macchiato.nu
