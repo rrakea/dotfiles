@@ -26,3 +26,5 @@
 	autocrlf = input
 [rerere]
 	enabled = true
+[credential]
+	helper = manager
