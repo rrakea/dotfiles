@@ -31,3 +31,5 @@
 	format = ssh
 [commit]
 	gpgSign = true
+[credential]
+	helper = manager

@@ -24,7 +24,7 @@ alias h. = helix .
 alias sys = btop
 alias irl = shutdown 0
 alias osreload = hyprctl reload
-
+alias hy = start-hyprland
 
 def v. [] {
   code . 
@@ -78,6 +78,11 @@ def g [branch = "main"] {
   git commit
   git pull origin $branch
   git push origin $branch
+}
+
+def rpi [] {
+  xhost +SI:localuser:root
+  sudo rpi-imager
 }
 
 def apps [] {
