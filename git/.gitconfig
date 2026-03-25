@@ -9,6 +9,7 @@
 [user]
 	email = login@konradburgi.com
 	name = rrakea
+	signingKey = /home/rrakea/.ssh/codeberg.pub
 [alias]
 	graph = log --oneline --graph --decorate
 	change = blame -w -C -C -C
@@ -26,3 +27,7 @@
 	autocrlf = input
 [rerere]
 	enabled = true
+[gpg]
+	format = ssh
+[commit]
+	gpgSign = true

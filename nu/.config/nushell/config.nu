@@ -34,7 +34,6 @@ def v. [] {
 def rosa [] {
   cd ~/code/rosa
   helix .
-  exit
 }
 
 def --env mdc [dir] {
@@ -74,11 +73,11 @@ def dotfiles [] {
   }
 }
 
-def g [remote = "origin", branch = "main"] {
+def g [branch = "main"] {
   git add .
   git commit
-  git pull $remote $branch
-  git push $remote $branch
+  git pull origin $branch
+  git push origin $branch
 }
 
 def apps [] {
